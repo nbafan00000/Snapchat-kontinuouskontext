@@ -1,20 +1,6 @@
 # 🎨 Kontinuous Kontext: Continuous Strength Control for Instruction-Based Image Editing
 This repository contains the **official codebase* for **Kontinuous Kontext**, a model for fine-grained **strength control for generalized instruction-based image editing**. 
 
-[Rishubh Parihar](https://rishubhparihar.github.io/),  [Or Patashnik](https://orpatashnik.github.io/),   [Daniil Ostashev](https://www.snap.com/en-US/research),   [R. Venkatesh Babu](https://val.cds.iisc.ac.in/),   [Daniel Cohen-Or](https://www.cs.tau.ac.il/~dcor/), [Kuan-Chieh (Jackson) Wang](https://kuanchiehwang.github.io/)  
-
-Snap Research · Tel Aviv University · IISc Bangalore  
-
-## [**arXiv**](https://arxiv.org/abs/2510.08532) · [Project Page](https://snap-research.github.io/kontinuouskontext/)
-
----
-
-<p align="center">
-  <img src="assets/teaser.png" alt="Kontinuous Kontext Teaser" width="90%">
-</p>
-
----
-
 ## 🧩 Abstract
 Instruction-based image editing offers a powerful and intuitive way to manipulate images through natural language. Yet, relying solely on text instructions limits fine-grained control over the extent of edits. We introduce Kontinuous Kontext, an instruction-driven editing model that provides a new dimension of control over edit strength, enabling users to adjust edits gradually from no change to a fully realized result in a smooth and continuous manner. Kontinuous Kontext extends a state-of-the-art image editing model to accept an additional input, a scalar edit strength which is then paired with the edit instruction, enabling explicit control over the extent of the edit. To inject this scalar information, we train a lightweight projector network that maps the input scalar and the edit instruction to coefficients in the model's modulation space. For training our model, we synthesize a diverse dataset of image-edit-instruction-strength quadruplets using existing generative models, followed by a filtering stage to ensure quality and consistency. Kontinuous Kontext provides a unified approach for fine-grained control over edit strength for instruction driven editing from subtle to strong across diverse operations such as stylization, attribute, material, background, and shape changes, without requiring attribute-specific training.
 
@@ -24,7 +10,7 @@ Instruction-based image editing offers a powerful and intuitive way to manipulat
 
 1.  **Clone the Repository**
     ```bash
-    git clone git@github.sc-corp.net:Snapchat/kontinuous_kontext.git
+    git clone https://github.com/nbafan00000/Snapchat-kontinuouskontext.git
     cd kontinuous-kontext
     ```
 
